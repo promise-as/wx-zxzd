@@ -1,0 +1,334 @@
+@charset "UTF-8";
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+input[type="text"]:-moz-placeholder,
+select:-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+input[type="text"]::-moz-placeholder,
+select::-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+input[type="text"]:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  font-family: '微软雅黑';
+}
+
+select {
+  border: none;
+}
+
+option {
+  text-indent: 1em;
+  font-family: '微软雅黑';
+}
+
+input[type='text'] {
+  border: none;
+  text-indent: 1em;
+}
+
+.zx-head .head-yy .yy-l .l-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.zx-head .head-bar .bar-r .r-icon, .zx-head .head-bar .bar-r .r-btn, .zx-head .head-yy .yy-l .l-time .icon1, .zx-head .head-yy .yy-l .l-time .icon2, .zx-head .head-yy .yy-r, .zx-kc .kc-item .item-row span, .zx-kc .kc-item .item-period .period-r .r-btn {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.space-between, .zx-head .head-bar, .zx-head .head-yy, .zx-kc .kc-item .item-period, .coupon .coupon-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.space-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* 圆点 */
+html, body, div, a, p, span, ul, li, input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 10rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.zx-head .head-bar {
+  height: 1.17333rem;
+  border-bottom: 0.02667rem solid #ebebeb;
+}
+
+.zx-head .head-bar .bar-l {
+  margin-left: 0.26667rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.zx-head .head-bar .bar-l .l-logo {
+  width: 1.68rem;
+  height: 0.53333rem;
+}
+
+.zx-head .head-bar .bar-l .l-subtitle {
+  font-size: 0.34667rem;
+  line-height: 0.52rem;
+  color: #333333;
+  margin-left: 0.30667rem;
+}
+
+.zx-head .head-bar .bar-r {
+  margin-right: 0.13333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zx-head .head-bar .bar-r .r-icon {
+  width: 0.32rem;
+  height: 0.36rem;
+  background: url("../images/icon_1.png") no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.09333rem;
+}
+
+.zx-head .head-bar .bar-r .r-btn {
+  font-size: 0.29333rem;
+  line-height: 0.29333rem;
+  color: #666666;
+}
+
+.zx-head .head-yy {
+  height: 1.78667rem;
+  margin-left: 0.26667rem;
+  margin-right: 0.14667rem;
+}
+
+.zx-head .head-yy .yy-l .l-title {
+  width: 4.26667rem;
+  font-size: 0.4rem;
+  line-height: 0.52rem;
+  color: #333333;
+}
+
+.zx-head .head-yy .yy-l .l-time {
+  font-size: 0.29333rem;
+  line-height: 0.52rem;
+  color: #999999;
+}
+
+.zx-head .head-yy .yy-l .l-time .icon1 {
+  width: 0.26667rem;
+  height: 0.26667rem;
+  background: url("../images/icon_3.png") no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.12rem;
+}
+
+.zx-head .head-yy .yy-l .l-time .icon2 {
+  width: 0.29333rem;
+  height: 0.24rem;
+  background: url("../images/icon_4.png") no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.10667rem;
+  margin-left: 0.28rem;
+}
+
+.zx-head .head-yy .yy-r {
+  width: 1.92rem;
+  height: 0.68rem;
+}
+
+/* 课程 */
+.zx-kc {
+  padding: 0.4rem;
+  background-color: #f3f3f3;
+}
+
+.zx-kc .kc-item {
+  background: url("../images/course.png") no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 0.33333rem;
+}
+
+.zx-kc .kc-item:last-child {
+  margin-bottom: 0;
+}
+
+.zx-kc .kc-item.new {
+  background: url("../images/course-new.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.zx-kc .kc-item .item-title {
+  font-size: 0.4rem;
+  line-height: 0.62667rem;
+  color: #333333;
+  padding: 0.32rem 0.77333rem 0.25333rem 1.09333rem;
+}
+
+.zx-kc .kc-item .item-row {
+  margin-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.zx-kc .kc-item .item-row span {
+  padding: 0 0.16rem;
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  background-color: #ffffff;
+  border-radius: 0.05333rem;
+  border: solid 1px #cf3340;
+  color: #cf3340;
+  text-align: center;
+  margin-right: 0.18667rem;
+}
+
+.zx-kc .kc-item .item-price {
+  font-size: 0.32rem;
+  line-height: 0.62667rem;
+  color: #666666;
+  margin-left: 1rem;
+  margin-bottom: 0.26667rem;
+}
+
+.zx-kc .kc-item .item-price span {
+  font-size: 0.50667rem;
+  color: #cf3340;
+  margin-right: 0.24rem;
+}
+
+.zx-kc .kc-item .item-period {
+  line-height: 0.62667rem;
+  font-size: 0.32rem;
+  margin: 0 0.4rem;
+  padding-top: 0.17333rem;
+  padding-bottom: 0.22667rem;
+  border-top: 0.09333rem solid #f3f3f3;
+}
+
+.zx-kc .kc-item .item-period .period-l {
+  color: #666666;
+}
+
+.zx-kc .kc-item .item-period .period-r {
+  color: #cf3340;
+}
+
+.zx-kc .kc-item .item-period .period-r .r-btn {
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  background-image: linear-gradient(-12deg, #cf3340 0%, #db535f 100%);
+  -webkit-box-shadow: 0px 0.10667rem 0.2rem 0px rgba(207, 51, 64, 0.42);
+          box-shadow: 0px 0.10667rem 0.2rem 0px rgba(207, 51, 64, 0.42);
+  border-radius: 0.09333rem;
+  padding: 0 0.29333rem;
+  color: #ffffff;
+  font-size: 0.34667rem;
+  margin-left: 0.4rem;
+}
+
+/* 优惠券 */
+.coupon {
+  background: url("../images/coupon.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 1.81333rem 2.45333rem 1.62667rem 2.29333rem;
+}
+
+.coupon .coupon-detail .detail-l .l-price {
+  font-size: 1.06667rem;
+  line-height: 0.62667rem;
+  color: #ff5f20;
+  margin-left: 0.4rem;
+  font-weight: bold;
+}
+
+.coupon .coupon-detail .detail-l .l-hint {
+  font-size: 0.34667rem;
+  line-height: 0.62667rem;
+  color: #c29b8c;
+}
+
+.coupon .coupon-detail .detail-l .l-hint span {
+  color: #ff5f20;
+}
+
+.coupon .coupon-detail .detail-r {
+  line-height: 0.62667rem;
+}
+
+.coupon .coupon-detail .detail-r .r-use {
+  font-size: 0.66667rem;
+  color: #ff5f20;
+}
+
+.coupon .coupon-detail .detail-r .r-btn {
+  display: block;
+  width: 2.02667rem;
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  background-image: linear-gradient(-46deg, #ff5f20 0%, #ff9971 100%);
+  -webkit-box-shadow: 0px 0.05333rem 0.12rem 0px rgba(255, 95, 32, 0.28);
+          box-shadow: 0px 0.05333rem 0.12rem 0px rgba(255, 95, 32, 0.28);
+  border-radius: 0.10667rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.34667rem;
+}

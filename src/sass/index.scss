@@ -1,0 +1,344 @@
+//$txt-color: #17b58f;
+$bg-color: #cf3340;
+
+$browser-default-font-size: 75px !default;
+;
+@function pr($px) {
+  @return $px / $browser-default-font-size * 1rem;
+}
+
+$padding-size: pr(30px);
+
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; // 去除safari浏览器的内阴影
+  &::-webkit-input-placeholder {
+    color: #666666;
+    font-size: inherit;
+  }
+  &:-moz-placeholder {
+    color: #666666;
+    font-size: inherit;
+  }
+  &::-moz-placeholder {
+    color: #666666;
+    font-size: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: #666666;
+    font-size: inherit;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  appearance: none;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  font-family: '微软雅黑';
+}
+
+select {
+  border: none;
+}
+
+option {
+  text-indent: 1em;
+  font-family: '微软雅黑';
+}
+
+input[type='text'] {
+  border: none;
+  text-indent: 1em;
+}
+
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+
+// 文本显示多少行就省略
+@mixin ells($row) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
+// 垂直居中，两端对齐
+.space-between {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+// 垂直居中，水平居中
+.space-around {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* 圆点 */
+%point-a {
+  &:before {
+    content: "";
+    @extend %in-b;
+    width: pr(6px);
+    height: pr(6px);
+    border-radius: 50%;
+    background-color: $bg-color;
+    vertical-align: middle;
+    margin-right: pr(8px);
+  }
+}
+
+html, body, div, a, p, span, ul, li, input {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: pr(750px);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.zx-head{
+  .head-bar{
+    height: pr(88px);
+    border-bottom: pr(2px) solid #ebebeb;
+    @extend .space-between;
+    .bar-l{
+      margin-left: pr(20px);
+      display: flex;
+      .l-logo{
+        width: pr(126px);
+        height: pr(40px);
+      }
+      .l-subtitle{
+        font-size: pr(26px);
+        line-height: pr(39px);
+        color: #333333;
+        margin-left: pr(23px);
+      }
+    }
+    .bar-r{
+      margin-right: pr(10px);
+      display: flex;
+      align-items: center;
+      .r-icon{
+        @extend %in-b;
+        width: pr(24px);
+        height: pr(27px);
+        background: url("../images/icon_1.png") no-repeat;
+        background-size: 100% 100%;
+        margin-right: pr(7px);
+      }
+      .r-btn{
+        @extend %in-b;
+        font-size: pr(22px);
+        line-height: pr(22px);
+        color: #666666;
+      }
+    }
+  }
+  .head-yy{
+    height: pr(134px);
+    margin-left: pr(20px);
+    margin-right: pr(11px);
+    @extend .space-between;
+    .yy-l{
+      .l-title{
+        width: pr(320px);
+        font-size: pr(30px);
+        line-height: pr(39px);
+        color: #333333;
+        @extend %one;
+      }
+      .l-time{
+        font-size: pr(22px);
+        line-height: pr(39px);
+        color: #999999;
+        .icon1{
+          @extend %in-b;
+          width: pr(20px);
+          height: pr(20px);
+          background: url("../images/icon_3.png") no-repeat;
+          background-size: 100% 100%;
+          margin-right: pr(9px);
+        }
+        .icon2{
+          @extend %in-b;
+          width: pr(22px);
+          height: pr(18px);
+          background: url("../images/icon_4.png") no-repeat;
+          background-size: 100% 100%;
+          margin-right: pr(8px);
+          margin-left: pr(21px);
+        }
+      }
+    }
+    .yy-r{
+      @extend %in-b;
+      width: pr(144px);
+      height: pr(51px);
+    }
+  }
+}
+/* 课程 */
+.zx-kc{
+  padding: $padding-size;
+  background-color: #f3f3f3;
+  .kc-item{
+    background: url("../images/course.png") no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: pr(25px);
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.new{
+      background: url("../images/course-new.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .item-title{
+      font-size: pr(30px);
+      line-height: pr(47px);
+      color: #333333;
+      padding: pr(24px) pr(58px) pr(19px) pr(82px);
+    }
+    .item-row{
+      margin-left: pr(75px);
+      margin-bottom: pr(30px);
+      span{
+        @extend %in-b;
+        padding: 0 pr(12px);
+        height: pr(40px);
+        line-height: pr(40px);
+        background-color: #ffffff;
+        border-radius: pr(4px);
+        border: solid 1px $bg-color;
+        color: $bg-color;
+        text-align: center;
+        margin-right: pr(14px);
+      }
+    }
+    .item-price{
+      font-size: pr(24px);
+      line-height: pr(47px);
+      color: #666666;
+      margin-left: pr(75px);
+      margin-bottom: pr(20px);
+      span{
+        font-size: pr(38px);
+        color: $bg-color;
+        margin-right: pr(18px);
+      }
+    }
+    .item-period{
+      line-height: pr(47px);
+      font-size: pr(24px);
+      @extend .space-between;
+      margin: 0 $padding-size;
+      padding-top: pr(13px);
+      padding-bottom: pr(17px);
+      border-top: pr(7px) solid #f3f3f3;
+      .period-l{
+        color: #666666;
+      }
+      .period-r{
+        color: $bg-color;
+        .r-btn{
+          @extend %in-b;
+          height: pr(50px);
+          line-height: pr(50px);
+          background-image: linear-gradient(-12deg,
+              #cf3340 0%,
+              #db535f 100%);
+          box-shadow: 0px pr(8px) pr(15px) 0px
+          rgba(207, 51, 64, 0.42);
+          border-radius: pr(7px);
+          padding: 0 pr(22px);
+          color: #ffffff;
+          font-size: pr(26px);
+          margin-left: pr(30px);
+        }
+      }
+    }
+  }
+}
+
+/* 优惠券 */
+.coupon{
+  //width: pr(750px);
+  //height: pr(366px);
+  background: url("../images/coupon.png") no-repeat;
+  background-size: 100% 100%;
+  padding: pr(136px) pr(184px) pr(122px) pr(172px);
+  .coupon-detail{
+    @extend .space-between;
+    .detail-l{
+      .l-price{
+        font-size: pr(80px);
+        line-height: pr(47px);
+        color: #ff5f20;
+        margin-left: pr(30px);
+        font-weight: bold;
+      }
+      .l-hint{
+        font-size: pr(26px);
+        line-height: pr(47px);
+        color: #c29b8c;
+        span{
+          color: #ff5f20;
+        }
+      }
+    }
+    .detail-r{
+      line-height: pr(47px);
+      .r-use{
+        font-size: pr(50px);
+        color: #ff5f20;
+      }
+      .r-btn{
+        display: block;
+        width: pr(152px);
+        height: pr(40px);
+        line-height: pr(40px);
+        background-image: linear-gradient(-46deg,
+            #ff5f20 0%,
+            #ff9971 100%);
+        box-shadow: 0px pr(4px) pr(9px) 0px
+        rgba(255, 95, 32, 0.28);
+        border-radius: pr(8px);
+        text-align: center;
+        color: #ffffff;
+        font-size: pr(26px);
+      }
+    }
+  }
+}
