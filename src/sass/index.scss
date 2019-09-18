@@ -210,6 +210,7 @@ html, body, div, a, p, span, ul, li, input {
     }
   }
 }
+
 /* 课程 */
 .zx-kc{
   padding: $padding-size;
@@ -338,6 +339,384 @@ html, body, div, a, p, span, ul, li, input {
         text-align: center;
         color: #ffffff;
         font-size: pr(26px);
+      }
+    }
+  }
+}
+
+/* 课程规划 */
+.kc-plan{
+  background: url("../images/course-plan.png") no-repeat;
+  background-size: 100% 100%;
+  padding: pr(512px) pr(46px) pr(38px);
+  .plan-btn{
+    @extend %in-b;
+    width: 100%;
+    height: pr(70px);
+    line-height: pr(70px);
+    background-image: linear-gradient(-12deg,
+        #cf3340 0%,
+        #db535f 100%);
+    box-shadow: 0px pr(8px) pr(15px) 0px
+    rgba(207, 51, 64, 0.42);
+    border-radius: pr(7px);
+    text-align: center;
+    color: #ffffff;
+    font-size: pr(34px);
+  }
+}
+
+/* 系统 */
+.system{
+  padding: pr(76px) $padding-size 0;
+  .system-title{
+    font-size: pr(38px);
+    line-height: pr(47px);
+    color: #333333;
+    text-align: center;
+    margin-bottom: pr(45px);
+    .title-icon{
+      @extend %in-b;
+      width: pr(70px);
+      height: pr(43px);
+      background: url("../images/icon_5.png") no-repeat;
+      background-size: 100% 100%;
+      vertical-align: middle;
+      margin-right: pr(12px);
+    }
+    .subtitle{
+      font-size: pr(28px);
+      line-height: pr(47px);
+      color: #666666;
+    }
+  }
+  .system-bg{
+    height: pr(167px);
+  }
+  .system-cont{
+    .cont-row{
+      display: flex;
+      align-items: center;
+      padding: $padding-size pr(20px);
+      border-bottom: 1px solid #e6e6e6;
+      &:last-child{
+        border-bottom: 0;
+      }
+      .row-icon{
+        width: pr(80px);
+        height: pr(80px);
+        margin-right: pr(20px);
+      }
+      .row-title{
+        font-size: pr(38px);
+        line-height: pr(47px);
+        color: #333333;
+        margin-right: pr(15px);
+      }
+      .row-detail{
+        width: pr(443px);
+        font-size: pr(26px);
+        line-height: pr(40px);
+        color: #666666;
+        @include ells(2);
+      }
+    }
+  }
+}
+
+/* 多重班 */
+.dcb{
+  height: pr(98px);
+}
+
+/* 跨年班 */
+.knb{
+  padding: $padding-size;
+  .knb-item{
+    margin-bottom: pr(33px);
+    .item-title{
+      width: pr(392px);
+      height: pr(83px);
+      line-height: pr(83px);
+      background-image: linear-gradient(-58deg,
+          #cc944b 0%,
+          #dbb788 100%);
+      box-shadow: pr(4px) pr(3px) pr(29px) 0px
+      rgba(206, 153, 84, 0.3);
+      border-radius: pr(20px) pr(20px) 0px 0px;
+      margin: 0 auto;
+      font-size: pr(36px);
+      color: #ffffff;
+      text-align: center;
+    }
+    .item-cont{
+      height: pr(464px);
+      border-radius: pr(13px);
+      border: solid 1px #e6e6e6;
+      .cont-row{
+        padding: pr(20px) 0;
+        display: flex;
+        margin: 0 pr(18px) 0 pr(20px);
+        border-bottom: 1px solid #e7e7e7;
+        .row-l{
+          font-size: pr(26px);
+          line-height: pr(39px);
+          color: #333333;
+          white-space: nowrap;
+          margin-right: pr(20px);
+        }
+        .row-r{
+          width: pr(520px);
+          font-size: pr(26px);
+          line-height: pr(39px);
+          color: #666666;
+          p{
+            line-height: pr(39px);
+          }
+          span{
+            margin-right: pr(20px);
+          }
+          strong{
+            font-weight: normal;
+            color: $bg-color;
+          }
+        }
+      }
+      .cont-btn{
+        margin-top: pr(33px);
+        text-align: center;
+        a{
+          @extend %in-b;
+          //width: pr(177px);
+          height: pr(59px);
+          line-height: pr(58px);
+          background-color: #ffffff;
+          border-radius: pr(6px);
+          border: solid 1px $bg-color;
+          font-size: pr(26px);
+          color: $bg-color;
+          margin: 0 10px;
+          padding: 0 pr(30px);
+        }
+      }
+    }
+    &:nth-of-type(2){
+      .item-title{
+        background-image: linear-gradient(-58deg,
+            #3055b3 0%,
+            #5675c5 100%);
+        box-shadow: pr(4px) pr(3px) pr(29px) 0px
+        rgba(55, 90, 182, 0.3);
+      }
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* 限购 */
+.xg{
+  .xg-cont{
+    height: pr(88px);
+    margin: 0 $padding-size;
+    background: url("../images/bg_2.png") no-repeat center;
+    background-size: 100% 100%;
+    @extend .space-around;
+    .xl{
+      font-size: pr(30px);
+      line-height: pr(39px);
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .zs{
+      font-size: pr(30px);
+      line-height: pr(39px);
+      color: #ffd59d;
+      .strong{
+        font-weight: bold;
+      }
+    }
+    .cont-btn{
+      width: pr(135px);
+      height: pr(47px);
+      line-height: pr(47px);
+      background-color: #ffffff;
+      border-radius: pr(24px);
+      font-size: pr(26px);
+      color: $bg-color;
+      text-align: center;
+    }
+  }
+}
+
+/* 课程和课件 */
+.kc-kj{
+  padding: pr(50px) $padding-size $padding-size;
+  .kc-kj-title{
+    font-size: pr(34px);
+    line-height: pr(39px);
+    color: #333333;
+    text-align: center;
+    margin-bottom: pr(38px);
+  }
+  .kc-kj-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: pr(26px);
+    grid-row-gap: pr(30px);
+    margin-bottom: pr(46px);
+    .cont-item{
+      //width: pr(332px);
+      .item-title{
+        font-size: pr(26px);
+        line-height: pr(39px);
+        color: #333333;
+        @extend %one;
+        padding-top: pr(10px);
+      }
+      .item-row{
+        @extend .space-between;
+        .row-l{
+          font-size: pr(22px);
+          line-height: pr(39px);
+          color: #666666;
+        }
+        .row-btn{
+          @extend %in-b;
+          height: pr(35px);
+          line-height: pr(35px);
+          border-radius: pr(6px);
+          border: solid 1px $bg-color;
+          padding: 0 pr(10px);
+          color: $bg-color;
+          font-size: pr(22px);
+        }
+      }
+    }
+  }
+  .kc-kj-btn{
+    @extend %in-b;
+    width: 100%;
+    height: pr(70px);
+    line-height: pr(70px);
+    background-color: #ffebeb;
+    border-radius: pr(7px);
+    font-size: pr(28px);
+    color: $bg-color;
+    text-align: center;
+  }
+}
+
+/* 教学团队 */
+.team{
+  padding: pr(20px) $padding-size $padding-size;
+  .team-title{
+    font-size: pr(34px);
+    line-height: pr(50px);
+    color: #333333;
+    text-align: center;
+    margin-bottom: pr(30px);
+    span{
+      display: block;
+    }
+  }
+  .team-item{
+    background-color: #ffffff;
+    border-radius: pr(21px);
+    border: solid 1px #e6e6e6;
+    padding: $padding-size pr(18px) $padding-size pr(20px);
+    @extend .space-between;
+    margin-bottom: pr(26px);
+    .item-l{
+      width: pr(214px);
+      height: pr(214px);
+      margin-right: pr(25px);
+    }
+    .item-r{
+      flex: 1;
+      .r-name{
+        font-size: pr(24px);
+        line-height: pr(34px);
+        color: #888888;
+        margin-bottom: pr(20px);
+        span{
+          @extend %in-b;
+          font-size: pr(32px);
+          line-height: pr(30px);
+          color: #333333;
+          border-bottom: pr(7px) solid #db545e;
+        }
+      }
+      .r-p{
+        font-size: pr(24px);
+        line-height: pr(35px);
+        color: #666666;
+        @include ells(3);
+        margin-bottom: pr(16px);
+      }
+      .r-btn{
+        @extend %in-b;
+        width: pr(199px);
+        height: pr(50px);
+        background-image: linear-gradient(-12deg,
+            #cf3340 0%,
+            #db535f 100%);
+        box-shadow: 0px pr(8px) pr(15px) 0px
+        rgba(207, 51, 64, 0.42);
+        border-radius: 7px;
+        font-size: pr(26px);
+        line-height: pr(47px);
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  }
+}
+/* 网校服务 */
+.serve{
+  padding: 0 $padding-size $padding-size;
+  .serve-title{
+    font-size: pr(34px);
+    line-height: pr(50px);
+    color: #333333;
+    text-align: center;
+    margin-bottom: pr(30px);
+    span{
+      display: block;
+    }
+  }
+  .serve-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: pr(18px);
+    grid-row-gap: pr(22px);
+    .cont-item{
+      //width: pr(334px);
+      //height: pr(126px);
+      background-color: #ffffff;
+      box-shadow: 0px pr(9px) pr(29px) 0px
+      rgba(70, 75, 105, 0.22);
+      border-radius: pr(4px) pr(27px) pr(4px) pr(4px);
+      padding: pr(27px) pr(10px) pr(27px) pr(27px);
+      display: flex;
+      align-items: center;
+      .item-l{
+        width: pr(66px);
+        margin-right: pr(17px);
+      }
+      .item-r{
+        flex: 1;
+        .r-title{
+          font-size: pr(30px);
+          line-height: pr(44px);
+          color: #444444;
+        }
+        .r-p{
+          font-size: pr(24px);
+          line-height: pr(44px);
+          color: #666666;
+        }
       }
     }
   }
