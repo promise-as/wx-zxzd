@@ -155,7 +155,7 @@ html, body, div, a, p, span, ul, li, input {
         @extend %in-b;
         width: pr(24px);
         height: pr(27px);
-        background: url("../images/icon_1.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_1.png") no-repeat;
         background-size: 100% 100%;
         margin-right: pr(7px);
       }
@@ -168,9 +168,9 @@ html, body, div, a, p, span, ul, li, input {
     }
   }
   .head-yy{
-    height: pr(134px);
-    margin-left: pr(20px);
-    margin-right: pr(11px);
+    width: pr(750px);
+    padding: pr(32px) pr(11px) pr(32px) pr(20px);
+    background-color: #ffffff;
     @extend .space-between;
     .yy-l{
       .l-title{
@@ -188,7 +188,7 @@ html, body, div, a, p, span, ul, li, input {
           @extend %in-b;
           width: pr(20px);
           height: pr(20px);
-          background: url("../images/icon_3.png") no-repeat;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_3.png") no-repeat;
           background-size: 100% 100%;
           margin-right: pr(9px);
         }
@@ -196,7 +196,7 @@ html, body, div, a, p, span, ul, li, input {
           @extend %in-b;
           width: pr(22px);
           height: pr(18px);
-          background: url("../images/icon_4.png") no-repeat;
+          background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_4.png") no-repeat;
           background-size: 100% 100%;
           margin-right: pr(8px);
           margin-left: pr(21px);
@@ -216,14 +216,14 @@ html, body, div, a, p, span, ul, li, input {
   padding: $padding-size;
   background-color: #f3f3f3;
   .kc-item{
-    background: url("../images/course.png") no-repeat;
+    background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course.png") no-repeat;
     background-size: 100% 100%;
     margin-bottom: pr(25px);
     &:last-child{
       margin-bottom: 0;
     }
     &.new{
-      background: url("../images/course-new.png") no-repeat;
+      background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course-new.png") no-repeat;
       background-size: 100% 100%;
     }
     .item-title{
@@ -295,17 +295,16 @@ html, body, div, a, p, span, ul, li, input {
 
 /* 优惠券 */
 .coupon{
-  //width: pr(750px);
-  //height: pr(366px);
-  background: url("../images/coupon.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/coupon.png") no-repeat;
   background-size: 100% 100%;
-  padding: pr(136px) pr(184px) pr(122px) pr(172px);
+  padding: pr(130px) pr(184px) pr(122px) pr(172px);
   .coupon-detail{
     @extend .space-between;
     .detail-l{
       .l-price{
+        @extend %in-b;
         font-size: pr(80px);
-        line-height: pr(47px);
+        line-height: pr(80px);
         color: #ff5f20;
         margin-left: pr(30px);
         font-weight: bold;
@@ -322,8 +321,10 @@ html, body, div, a, p, span, ul, li, input {
     .detail-r{
       line-height: pr(47px);
       .r-use{
+        @extend %in-b;
         font-size: pr(50px);
         color: #ff5f20;
+        margin-bottom: pr(16px);
       }
       .r-btn{
         display: block;
@@ -346,7 +347,7 @@ html, body, div, a, p, span, ul, li, input {
 
 /* 课程规划 */
 .kc-plan{
-  background: url("../images/course-plan.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course-plan.png") no-repeat;
   background-size: 100% 100%;
   padding: pr(512px) pr(46px) pr(38px);
   .plan-btn{
@@ -379,7 +380,7 @@ html, body, div, a, p, span, ul, li, input {
       @extend %in-b;
       width: pr(70px);
       height: pr(43px);
-      background: url("../images/icon_5.png") no-repeat;
+      background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_5.png") no-repeat;
       background-size: 100% 100%;
       vertical-align: middle;
       margin-right: pr(12px);
@@ -427,6 +428,27 @@ html, body, div, a, p, span, ul, li, input {
 /* 多重班 */
 .dcb{
   height: pr(98px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dcb-cont{
+    font-size: pr(36px);
+    font-weight: bold;
+    line-height: pr(39px);
+    color: #ffffff;
+    .cont-bold{
+      @extend %in-b;
+      height: pr(41px);
+      line-height: pr(40px);
+      padding: 0 pr(13px);
+      background-color: #ffdb83;
+      color: #749fe2;
+      border-top-left-radius: pr(18px);
+      border-bottom-left-radius: pr(18px);
+      border-top-right-radius: pr(18px);
+
+    }
+  }
 }
 
 /* 跨年班 */
@@ -520,7 +542,7 @@ html, body, div, a, p, span, ul, li, input {
   .xg-cont{
     height: pr(88px);
     margin: 0 $padding-size;
-    background: url("../images/bg_2.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/bg_2.png") no-repeat center;
     background-size: 100% 100%;
     @extend .space-around;
     .xl{
@@ -538,7 +560,6 @@ html, body, div, a, p, span, ul, li, input {
       }
     }
     .cont-btn{
-      width: pr(135px);
       height: pr(47px);
       line-height: pr(47px);
       background-color: #ffffff;
@@ -546,6 +567,7 @@ html, body, div, a, p, span, ul, li, input {
       font-size: pr(26px);
       color: $bg-color;
       text-align: center;
+      padding: 0 pr(16px);
     }
   }
 }
@@ -692,8 +714,6 @@ html, body, div, a, p, span, ul, li, input {
     grid-column-gap: pr(18px);
     grid-row-gap: pr(22px);
     .cont-item{
-      //width: pr(334px);
-      //height: pr(126px);
       background-color: #ffffff;
       box-shadow: 0px pr(9px) pr(29px) 0px
       rgba(70, 75, 105, 0.22);

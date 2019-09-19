@@ -62,7 +62,7 @@ input[type='text'] {
   overflow: hidden;
 }
 
-.zx-head .head-bar .bar-r .r-icon, .zx-head .head-bar .bar-r .r-btn, .zx-head .head-yy .yy-l .l-time .icon1, .zx-head .head-yy .yy-l .l-time .icon2, .zx-head .head-yy .yy-r, .zx-kc .kc-item .item-row span, .zx-kc .kc-item .item-period .period-r .r-btn, .kc-plan .plan-btn, .system .system-title .title-icon, .knb .knb-item .item-cont .cont-btn a, .kc-kj .kc-kj-cont .cont-item .item-row .row-btn, .kc-kj .kc-kj-btn, .team .team-item .item-r .r-name span, .team .team-item .item-r .r-btn {
+.zx-head .head-bar .bar-r .r-icon, .zx-head .head-bar .bar-r .r-btn, .zx-head .head-yy .yy-l .l-time .icon1, .zx-head .head-yy .yy-l .l-time .icon2, .zx-head .head-yy .yy-r, .zx-kc .kc-item .item-row span, .zx-kc .kc-item .item-period .period-r .r-btn, .coupon .coupon-detail .detail-l .l-price, .coupon .coupon-detail .detail-r .r-use, .kc-plan .plan-btn, .system .system-title .title-icon, .dcb .dcb-cont .cont-bold, .knb .knb-item .item-cont .cont-btn a, .kc-kj .kc-kj-cont .cont-item .item-row .row-btn, .kc-kj .kc-kj-btn, .team .team-item .item-r .r-name span, .team .team-item .item-r .r-btn {
   display: inline-block;
   *zoom: 1;
   *display: inline;
@@ -144,7 +144,7 @@ html, body, div, a, p, span, ul, li, input {
 .zx-head .head-bar .bar-r .r-icon {
   width: 0.32rem;
   height: 0.36rem;
-  background: url("../images/icon_1.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_1.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.09333rem;
 }
@@ -156,9 +156,9 @@ html, body, div, a, p, span, ul, li, input {
 }
 
 .zx-head .head-yy {
-  height: 1.78667rem;
-  margin-left: 0.26667rem;
-  margin-right: 0.14667rem;
+  width: 10rem;
+  padding: 0.42667rem 0.14667rem 0.42667rem 0.26667rem;
+  background-color: #ffffff;
 }
 
 .zx-head .head-yy .yy-l .l-title {
@@ -177,7 +177,7 @@ html, body, div, a, p, span, ul, li, input {
 .zx-head .head-yy .yy-l .l-time .icon1 {
   width: 0.26667rem;
   height: 0.26667rem;
-  background: url("../images/icon_3.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_3.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.12rem;
 }
@@ -185,7 +185,7 @@ html, body, div, a, p, span, ul, li, input {
 .zx-head .head-yy .yy-l .l-time .icon2 {
   width: 0.29333rem;
   height: 0.24rem;
-  background: url("../images/icon_4.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_4.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.10667rem;
   margin-left: 0.28rem;
@@ -203,7 +203,7 @@ html, body, div, a, p, span, ul, li, input {
 }
 
 .zx-kc .kc-item {
-  background: url("../images/course.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course.png") no-repeat;
   background-size: 100% 100%;
   margin-bottom: 0.33333rem;
 }
@@ -213,7 +213,7 @@ html, body, div, a, p, span, ul, li, input {
 }
 
 .zx-kc .kc-item.new {
-  background: url("../images/course-new.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course-new.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -287,14 +287,14 @@ html, body, div, a, p, span, ul, li, input {
 
 /* 优惠券 */
 .coupon {
-  background: url("../images/coupon.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/coupon.png") no-repeat;
   background-size: 100% 100%;
-  padding: 1.81333rem 2.45333rem 1.62667rem 2.29333rem;
+  padding: 1.73333rem 2.45333rem 1.62667rem 2.29333rem;
 }
 
 .coupon .coupon-detail .detail-l .l-price {
   font-size: 1.06667rem;
-  line-height: 0.62667rem;
+  line-height: 1.06667rem;
   color: #ff5f20;
   margin-left: 0.4rem;
   font-weight: bold;
@@ -317,6 +317,7 @@ html, body, div, a, p, span, ul, li, input {
 .coupon .coupon-detail .detail-r .r-use {
   font-size: 0.66667rem;
   color: #ff5f20;
+  margin-bottom: 0.21333rem;
 }
 
 .coupon .coupon-detail .detail-r .r-btn {
@@ -335,7 +336,7 @@ html, body, div, a, p, span, ul, li, input {
 
 /* 课程规划 */
 .kc-plan {
-  background: url("../images/course-plan.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/course-plan.png") no-repeat;
   background-size: 100% 100%;
   padding: 6.82667rem 0.61333rem 0.50667rem;
 }
@@ -369,7 +370,7 @@ html, body, div, a, p, span, ul, li, input {
 .system .system-title .title-icon {
   width: 0.93333rem;
   height: 0.57333rem;
-  background: url("../images/icon_5.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/icon_5.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
   margin-right: 0.16rem;
@@ -428,6 +429,33 @@ html, body, div, a, p, span, ul, li, input {
 /* 多重班 */
 .dcb {
   height: 1.30667rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dcb .dcb-cont {
+  font-size: 0.48rem;
+  font-weight: bold;
+  line-height: 0.52rem;
+  color: #ffffff;
+}
+
+.dcb .dcb-cont .cont-bold {
+  height: 0.54667rem;
+  line-height: 0.53333rem;
+  padding: 0 0.17333rem;
+  background-color: #ffdb83;
+  color: #749fe2;
+  border-top-left-radius: 0.24rem;
+  border-bottom-left-radius: 0.24rem;
+  border-top-right-radius: 0.24rem;
 }
 
 /* 跨年班 */
@@ -527,7 +555,7 @@ html, body, div, a, p, span, ul, li, input {
 .xg .xg-cont {
   height: 1.17333rem;
   margin: 0 0.4rem;
-  background: url("../images/bg_2.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/wx-zxzd/images/bg_2.png") no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -549,7 +577,6 @@ html, body, div, a, p, span, ul, li, input {
 }
 
 .xg .xg-cont .cont-btn {
-  width: 1.8rem;
   height: 0.62667rem;
   line-height: 0.62667rem;
   background-color: #ffffff;
@@ -557,6 +584,7 @@ html, body, div, a, p, span, ul, li, input {
   font-size: 0.34667rem;
   color: #cf3340;
   text-align: center;
+  padding: 0 0.21333rem;
 }
 
 /* 课程和课件 */
